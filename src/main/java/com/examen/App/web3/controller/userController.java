@@ -10,7 +10,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
 import java.util.Map;
+import java.util.Optional;
+import java.util.UUID;
 
 @RestController
 @RequestMapping("/api/users")
@@ -49,5 +52,17 @@ public class userController {
         return ResponseEntity.ok("Logout successful");
     }
 
+    @GetMapping("/all")
+    public List<User> findAllUser(){
+        return  userService.allUser();
+    }
+    @DeleteMapping("/delete")
+    public void deleteUser(@RequestBody User user){
+        userService.deleteUser(user);
+    }
 
+    @GetMapping("/{id}")
+    public Optional<User> findById(@PathVariable UUID id){
+        return userService.findById(id);
+    }
 }

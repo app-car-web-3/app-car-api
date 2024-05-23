@@ -6,9 +6,9 @@ CREATE TABLE car (
     model VARCHAR(100),
     price DECIMAL(10, 2),
     color VARCHAR(50),
-    motorType VARCHAR(100),
+    motor_type VARCHAR(100),
     power INT,
-    placeNumber INT,
+    place_number INT,
     status ENUM('Pinned', 'Not Pinned'),
     type VARCHAR(100)
 );
@@ -23,16 +23,16 @@ CREATE TABLE appointment (
     appointment_id INT AUTO_INCREMENT PRIMARY KEY,
     car_id INT REFERENCES car(car_id),
     name VARCHAR(255),
-    firstName VARCHAR(255),
+    first_name VARCHAR(255),
     email VARCHAR(255),
     message TEXT,
     contact VARCHAR(100),
-    appointmentDate DATETIME,
+    appointment_date DATETIME,
     status ENUM('pending', 'validated', 'rejected', 'archived'),
 );
 
 CREATE TABLE users (
-    user_id UUID AUTO_INCREMENT PRIMARY KEY,
+    user_id UUID  AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
     email VARCHAR(255) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL

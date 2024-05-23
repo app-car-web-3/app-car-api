@@ -80,17 +80,17 @@ public class DataLoader implements CommandLineRunner {
         // Insérer des images
         Image image1 = new Image();
         image1.setCar(car1);
-        image1.setUrl("http://example.com/image1.jpg");
+        image1.setUrl("https://www.tesla.com/sites/default/files/modelsx-new/social/model-s-hero-social.jpg");
         imageRepository.save(image1);
 
         Image image2 = new Image();
         image2.setCar(car2);
-        image2.setUrl("http://example.com/image2.jpg");
+        image2.setUrl("https://www.audiusa.com/content/dam/nemo/us/models/q7/2023/overview/stage/q7-overview-01.jpg");
         imageRepository.save(image2);
 
         Image image3 = new Image();
         image3.setCar(car3);
-        image3.setUrl("http://example.com/image3.jpg");
+        image3.setUrl("https://cdn.motor1.com/images/mgl/6xJxn/s1/2022-bmw-7-series.jpg");
         imageRepository.save(image3);
 
         // Insérer des rendez-vous

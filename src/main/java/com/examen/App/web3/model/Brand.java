@@ -1,4 +1,6 @@
 package com.examen.App.web3.model;
+
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,12 +12,15 @@ import lombok.Setter;
 @Entity
 @Getter
 @Setter
-@Table(name = "image")
-public class Image {
+@Table(name = "brand")
+
+public class Brand {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer imageId;
+    private Integer brandId;
     private String name ;
-    @Column(nullable = false, length = 250)
-    private String url;
+    private String description ;
+    @ManyToOne
+    @JoinColumn(name = "image_id", referencedColumnName = "imageId")
+    private Image imageId ;
 }

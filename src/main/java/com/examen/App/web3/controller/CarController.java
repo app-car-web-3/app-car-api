@@ -10,6 +10,8 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/car")
+@CrossOrigin(origins = "http://localhost:3000")
+
 public class CarController {
     @Autowired
     private CarService carService;

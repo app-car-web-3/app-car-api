@@ -11,6 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/brand")
+@CrossOrigin(origins = "http://localhost:3000")
 public class BrandController {
     @Autowired
     private BrandService brandService;

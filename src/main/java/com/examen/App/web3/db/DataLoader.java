@@ -37,7 +37,7 @@ public class DataLoader implements CommandLineRunner {
         brand1.setDescription("Luxury vehicle manufacturer");
         Image brandImage1 = new Image();
         brandImage1.setName("Mercedes-Benz Logo");
-        brandImage1.setUrl("https://www.mbusa.com/content/dam/mb-nafta/us/myco/my21/all-vehicles/2021-S-Class-SEDAN.png");
+        brandImage1.setUrl("https://seeklogo.com/images/M/mercedes-benz-logo-387C1B084B-seeklogo.com.png");
         imageRepository.save(brandImage1);
         brand1.setImageId(brandImage1);
         brandRepository.save(brand1);
@@ -47,7 +47,7 @@ public class DataLoader implements CommandLineRunner {
         brand2.setDescription("Electric vehicle manufacturer");
         Image brandImage2 = new Image();
         brandImage2.setName("Tesla Logo");
-        brandImage2.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Tesla_logo.png/800px-Tesla_logo.png");
+        brandImage2.setUrl("https://static.vecteezy.com/system/resources/previews/020/336/735/original/tesla-logo-tesla-icon-transparent-png-free-vector.jpg");
         imageRepository.save(brandImage2);
         brand2.setImageId(brandImage2);
         brandRepository.save(brand2);
@@ -57,7 +57,7 @@ public class DataLoader implements CommandLineRunner {
         brand3.setDescription("American multinational automaker");
         Image brandImage3 = new Image();
         brandImage3.setName("Ford Logo");
-        brandImage3.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Ford_logo_flat.svg/800px-Ford_logo_flat.svg.png");
+        brandImage3.setUrl("https://freelogopng.com/images/all_img/1692441097ford-logo-black.png");
         imageRepository.save(brandImage3);
         brand3.setImageId(brandImage3);
         brandRepository.save(brand3);
@@ -67,7 +67,7 @@ public class DataLoader implements CommandLineRunner {
         brand4.setDescription("Japanese public multinational conglomerate");
         Image brandImage4 = new Image();
         brandImage4.setName("Honda Logo");
-        brandImage4.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Honda_logo.svg/800px-Honda_logo.svg.png");
+        brandImage4.setUrl("https://freelogopng.com/images/all_img/1686370754honda-motorcycle-logo-black.png");
         imageRepository.save(brandImage4);
         brand4.setImageId(brandImage4);
         brandRepository.save(brand4);
@@ -77,7 +77,7 @@ public class DataLoader implements CommandLineRunner {
         brand5.setDescription("Japanese multinational automotive manufacturer");
         Image brandImage5 = new Image();
         brandImage5.setName("Toyota Logo");
-        brandImage5.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/9/9d/Toyota_logo.svg/800px-Toyota_logo.svg.png");
+        brandImage5.setUrl("https://freelogopng.com/images/all_img/1686110052toyota-logo-black.png");
         imageRepository.save(brandImage5);
         brand5.setImageId(brandImage5);
         brandRepository.save(brand5);
@@ -87,7 +87,7 @@ public class DataLoader implements CommandLineRunner {
         brand6.setDescription("Japanese automaker");
         Image brandImage6 = new Image();
         brandImage6.setName("Mazda Logo");
-        brandImage6.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Mazda_logo_with_emblem.svg/800px-Mazda_logo_with_emblem.svg.png");
+        brandImage6.setUrl("https://i.pinimg.com/564x/77/36/58/77365871976e13fbc666d2bb5dee294e.jpg");
         imageRepository.save(brandImage6);
         brand6.setImageId(brandImage6);
         brandRepository.save(brand6);
@@ -97,7 +97,7 @@ public class DataLoader implements CommandLineRunner {
         brand7.setDescription("German automobile manufacturer");
         Image brandImage7 = new Image();
         brandImage7.setName("Audi Logo");
-        brandImage7.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Audi_logo_2016.svg/800px-Audi_logo_2016.svg.png");
+        brandImage7.setUrl("https://i.pinimg.com/564x/5a/d9/5e/5ad95ed5c0fbe3013e2dcf9baa76385e.jpg");
         imageRepository.save(brandImage7);
         brand7.setImageId(brandImage7);
         brandRepository.save(brand7);
@@ -107,7 +107,7 @@ public class DataLoader implements CommandLineRunner {
         brand8.setDescription("German multinational company");
         Image brandImage8 = new Image();
         brandImage8.setName("BMW Logo");
-        brandImage8.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/BMW.svg/800px-BMW.svg.png");
+        brandImage8.setUrl("https://freelogopng.com/images/all_img/1686386725bmw-logo-png-black-and-white.png");
         imageRepository.save(brandImage8);
         brand8.setImageId(brandImage8);
         brandRepository.save(brand8);
@@ -117,7 +117,7 @@ public class DataLoader implements CommandLineRunner {
         brand9.setDescription("Japanese multinational automobile manufacturer");
         Image brandImage9 = new Image();
         brandImage9.setName("Nissan Logo");
-        brandImage9.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Nissan_2020_logo.svg/800px-Nissan_2020_logo.svg.png");
+        brandImage9.setUrl("https://i.pinimg.com/564x/d6/e1/5e/d6e15e493368d88b51f1474a5165f8de.jpg");
         imageRepository.save(brandImage9);
         brand9.setImageId(brandImage9);
         brandRepository.save(brand9);
@@ -127,7 +127,7 @@ public class DataLoader implements CommandLineRunner {
         brand10.setDescription("American automobile marque");
         Image brandImage10 = new Image();
         brandImage10.setName("Jeep Logo");
-        brandImage10.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Jeep_logo.svg/800px-Jeep_logo.svg.png");
+        brandImage10.setUrl("https://i.pinimg.com/564x/29/b8/c4/29b8c461f054648c7cc2304fd363f360.jpg");
         imageRepository.save(brandImage10);
         brand10.setImageId(brandImage10);
         brandRepository.save(brand10);
@@ -137,7 +137,7 @@ public class DataLoader implements CommandLineRunner {
         brand11.setDescription("South Korean multinational automotive manufacturer");
         Image brandImage11 = new Image();
         brandImage11.setName("Kia Logo");
-        brandImage11.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/Kia-logo.svg/800px-Kia-logo.svg.png");
+        brandImage11.setUrl("https://i.pinimg.com/736x/66/00/10/66001073246ee1203e62da9ef48b2d54.jpg");
         imageRepository.save(brandImage11);
         brand11.setImageId(brandImage11);
         brandRepository.save(brand11);
@@ -147,7 +147,7 @@ public class DataLoader implements CommandLineRunner {
         brand12.setDescription("South Korean multinational automotive manufacturer");
         Image brandImage12 = new Image();
         brandImage12.setName("Hyundai Logo");
-        brandImage12.setUrl("https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Hyundai_logo.svg/800px-Hyundai_logo.svg.png");
+        brandImage12.setUrl("https://i.pinimg.com/564x/74/77/4c/74774c8992f9632bf05cbb8196a4eafd.jpg");
         imageRepository.save(brandImage12);
         brand12.setImageId(brandImage12);
         brandRepository.save(brand12);
@@ -167,7 +167,7 @@ public class DataLoader implements CommandLineRunner {
         car1.setType("Sedan");
         Image carImage1 = new Image();
         carImage1.setName("Mercedes-Benz C-Class");
-        carImage1.setUrl("https://cdn.motor1.com/images/mgl/7zVRk/s3/2021-mercedes-benz-c-class-rendering.jpg");
+        carImage1.setUrl("https://i.pinimg.com/564x/a9/01/58/a9015809fe2dbfea60cc912efb396b23.jpg");
         imageRepository.save(carImage1);
         car1.setImageId(carImage1);
         carRepository.save(car1);
@@ -186,7 +186,7 @@ public class DataLoader implements CommandLineRunner {
         car2.setType("Sedan");
         Image carImage2 = new Image();
         carImage2.setName("Tesla Model S");
-        carImage2.setUrl("https://www.tesla.com/sites/default/files/modelsx-new/social/model-s-hero-social.jpg");
+        carImage2.setUrl("https://i.pinimg.com/564x/d5/fc/9e/d5fc9edc13aba9bccfc0d782b2816efa.jpg");
         imageRepository.save(carImage2);
         car2.setImageId(carImage2);
         carRepository.save(car2);
@@ -205,7 +205,7 @@ public class DataLoader implements CommandLineRunner {
         car3.setType("Coupe");
         Image carImage3 = new Image();
         carImage3.setName("Ford Mustang");
-        carImage3.setUrl("https://cdn.motor1.com/images/mgl/MelzL/s3/2022-ford-mustang.jpg");
+        carImage3.setUrl("https://i.pinimg.com/564x/af/40/58/af4058dfc123cfa613553fc97351d230.jpg");
         imageRepository.save(carImage3);
         car3.setImageId(carImage3);
         carRepository.save(car3);
@@ -224,7 +224,7 @@ public class DataLoader implements CommandLineRunner {
         car4.setType("Sedan");
         Image carImage4 = new Image();
         carImage4.setName("Honda Civic");
-        carImage4.setUrl("https://cdn.motor1.com/images/mgl/GJ0N1/s3/2022-honda-civic.jpg");
+        carImage4.setUrl("https://i.pinimg.com/564x/c7/f3/df/c7f3dfca1f08424aeecd736caa51618a.jpg");
         imageRepository.save(carImage4);
         car4.setImageId(carImage4);
         carRepository.save(car4);
@@ -243,7 +243,7 @@ public class DataLoader implements CommandLineRunner {
         car5.setType("Sedan");
         Image carImage5 = new Image();
         carImage5.setName("Toyota Camry");
-        carImage5.setUrl("https://cdn.motor1.com/images/mgl/0x0LQ/s3/2022-toyota-camry.jpg");
+        carImage5.setUrl("https://i.pinimg.com/564x/43/e8/8a/43e88a8ad09494989f4622ec04976e08.jpg");
         imageRepository.save(carImage5);
         car5.setImageId(carImage5);
         carRepository.save(car5);
@@ -262,7 +262,7 @@ public class DataLoader implements CommandLineRunner {
         car6.setType("SUV");
         Image carImage6 = new Image();
         carImage6.setName("Mazda CX-5");
-        carImage6.setUrl("https://cdn.motor1.com/images/mgl/9x9J3/s3/2022-mazda-cx-5.jpg");
+        carImage6.setUrl("https://www.groupe-parot.com/sites/zanzicar/files/inline-images/mazda-2_4.jpg");
         imageRepository.save(carImage6);
         car6.setImageId(carImage6);
         carRepository.save(car6);
@@ -281,7 +281,7 @@ public class DataLoader implements CommandLineRunner {
         car7.setType("Sedan");
         Image carImage7 = new Image();
         carImage7.setName("Audi A4");
-        carImage7.setUrl("https://cdn.motor1.com/images/mgl/Vg1Jm/s3/2022-audi-a4.jpg");
+        carImage7.setUrl("https://i.pinimg.com/564x/94/42/8d/94428d7ab6f6ce60f821be3ef61adac9.jpg");
         imageRepository.save(carImage7);
         car7.setImageId(carImage7);
         carRepository.save(car7);
@@ -300,7 +300,7 @@ public class DataLoader implements CommandLineRunner {
         car8.setType("Sedan");
         Image carImage8 = new Image();
         carImage8.setName("BMW 3 Series");
-        carImage8.setUrl("https://cdn.motor1.com/images/mgl/7x8J6/s3/2022-bmw-3-series.jpg");
+        carImage8.setUrl("https://i.pinimg.com/564x/b4/9f/ff/b49fff8a2abc3409ae935f4b05d8dd8c.jpg");
         imageRepository.save(carImage8);
         car8.setImageId(carImage8);
         carRepository.save(car8);
@@ -319,7 +319,7 @@ public class DataLoader implements CommandLineRunner {
         car9.setType("Sedan");
         Image carImage9 = new Image();
         carImage9.setName("Nissan Altima");
-        carImage9.setUrl("https://cdn.motor1.com/images/mgl/xq2Jm/s3/2022-nissan-altima.jpg");
+        carImage9.setUrl("https://i.pinimg.com/564x/b7/15/76/b71576fd2379891670e720d699e2b32f.jpg");
         imageRepository.save(carImage9);
         car9.setImageId(carImage9);
         carRepository.save(car9);
@@ -338,7 +338,7 @@ public class DataLoader implements CommandLineRunner {
         car10.setType("SUV");
         Image carImage10 = new Image();
         carImage10.setName("Jeep Wrangler");
-        carImage10.setUrl("https://cdn.motor1.com/images/mgl/JZk1L/s3/2022-jeep-wrangler.jpg");
+        carImage10.setUrl("https://i.pinimg.com/564x/51/5f/d1/515fd1bb46b441c8ac0d9fb59d9e5b51.jpg");
         imageRepository.save(carImage10);
         car10.setImageId(carImage10);
         carRepository.save(car10);
@@ -357,7 +357,7 @@ public class DataLoader implements CommandLineRunner {
         car11.setType("SUV");
         Image carImage11 = new Image();
         carImage11.setName("Kia Sorento");
-        carImage11.setUrl("https://cdn.motor1.com/images/mgl/ykNlm/s3/2022-kia-sorento.jpg");
+        carImage11.setUrl("https://i.pinimg.com/564x/1a/01/75/1a01757d0abb20e02a026896e27eb24e.jpg");
         imageRepository.save(carImage11);
         car11.setImageId(carImage11);
         carRepository.save(car11);
@@ -376,7 +376,7 @@ public class DataLoader implements CommandLineRunner {
         car12.setType("SUV");
         Image carImage12 = new Image();
         carImage12.setName("Hyundai Tucson");
-        carImage12.setUrl("https://cdn.motor1.com/images/mgl/x7xJ7/s3/2022-hyundai-tucson.jpg");
+        carImage12.setUrl("https://i.pinimg.com/564x/ef/87/f2/ef87f24022350809d129146ab0e5fff0.jpg");
         imageRepository.save(carImage12);
         car12.setImageId(carImage12);
         carRepository.save(car12);

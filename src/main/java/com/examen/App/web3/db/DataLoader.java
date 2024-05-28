@@ -214,7 +214,7 @@ public class DataLoader implements CommandLineRunner {
         car4.setName("Civic");
         car4.setDescription("Compact car");
         car4.setBrandId(brand4);
-        car4.setModel("2022");
+        car4.setModel("2023");
         car4.setPrice(new BigDecimal("22000.00"));
         car4.setColor("White");
         car4.setMotorType("Gasoline");
@@ -233,7 +233,7 @@ public class DataLoader implements CommandLineRunner {
         car5.setName("Camry");
         car5.setDescription("Mid-size car");
         car5.setBrandId(brand5);
-        car5.setModel("2022");
+        car5.setModel("2023");
         car5.setPrice(new BigDecimal("25000.00"));
         car5.setColor("Gray");
         car5.setMotorType("Hybrid");
@@ -252,7 +252,7 @@ public class DataLoader implements CommandLineRunner {
         car6.setName("CX-5");
         car6.setDescription("Compact crossover SUV");
         car6.setBrandId(brand6);
-        car6.setModel("2022");
+        car6.setModel("2023");
         car6.setPrice(new BigDecimal("27000.00"));
         car6.setColor("Red");
         car6.setMotorType("Gasoline");
@@ -271,7 +271,7 @@ public class DataLoader implements CommandLineRunner {
         car7.setName("A4");
         car7.setDescription("Compact executive car");
         car7.setBrandId(brand7);
-        car7.setModel("2022");
+        car7.setModel("2023");
         car7.setPrice(new BigDecimal("39000.00"));
         car7.setColor("Black");
         car7.setMotorType("Gasoline");
@@ -290,7 +290,7 @@ public class DataLoader implements CommandLineRunner {
         car8.setName("3 Series");
         car8.setDescription("Compact executive car");
         car8.setBrandId(brand8);
-        car8.setModel("2022");
+        car8.setModel("2024");
         car8.setPrice(new BigDecimal("42000.00"));
         car8.setColor("White");
         car8.setMotorType("Gasoline");
@@ -328,7 +328,7 @@ public class DataLoader implements CommandLineRunner {
         car10.setName("Wrangler");
         car10.setDescription("Compact SUV");
         car10.setBrandId(brand10);
-        car10.setModel("2022");
+        car10.setModel("2024");
         car10.setPrice(new BigDecimal("35000.00"));
         car10.setColor("Green");
         car10.setMotorType("Gasoline");
@@ -347,7 +347,7 @@ public class DataLoader implements CommandLineRunner {
         car11.setName("Sorento");
         car11.setDescription("Mid-size crossover SUV");
         car11.setBrandId(brand11);
-        car11.setModel("2022");
+        car11.setModel("2024");
         car11.setPrice(new BigDecimal("29000.00"));
         car11.setColor("Blue");
         car11.setMotorType("Gasoline");
@@ -366,7 +366,7 @@ public class DataLoader implements CommandLineRunner {
         car12.setName("Tucson");
         car12.setDescription("Compact crossover SUV");
         car12.setBrandId(brand12);
-        car12.setModel("2022");
+        car12.setModel("2024");
         car12.setPrice(new BigDecimal("26000.00"));
         car12.setColor("Red");
         car12.setMotorType("Gasoline");

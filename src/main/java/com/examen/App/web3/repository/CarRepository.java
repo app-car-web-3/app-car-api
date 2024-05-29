@@ -15,5 +15,7 @@ public interface CarRepository extends JpaRepository<Car,Integer> {
     @Query("SELECT c FROM Car c INNER JOIN c.brandId b WHERE b.name = :brandName")
     List<Car> findCarsByBrandName(@Param("brandName") String brandName);
 
+    @Query("SELECT c FROM Car c INNER JOIN c.brandId b WHERE LOWER(b.name) LIKE CONCAT('%', LOWER(:keyword), '%') OR LOWER(c.model) LIKE CONCAT('%', LOWER(:keyword), '%')")
+    List<Car> findCarsByBrandNameOrModelContaining(@Param("keyword") String keyword);
 
 }

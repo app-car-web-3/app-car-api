@@ -37,6 +37,10 @@ public class CarController {
     public List<Car> getCarsByBrand(@RequestParam String brand) {
         return carService.findAllCarByBrand(brand);
     }
+    @GetMapping("/brand-name")
+    public List<Car> findCarsByBrandModelContaining(@RequestParam String brand) {
+        return carService.findCarsByBrandModelContaining(brand);
+    }
 
 
 }

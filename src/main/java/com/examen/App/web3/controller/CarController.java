@@ -33,4 +33,10 @@ public class CarController {
     public  void deleteCar(@RequestBody Car car){
         carService.delete(car);
     }
+    @GetMapping("/brand")
+    public List<Car> getCarsByBrand(@RequestParam String brand) {
+        return carService.findAllCarByBrand(brand);
+    }
+
+
 }

@@ -26,5 +26,10 @@ public class CarService {
     public void delete(Car car){
         carRepository.deleteById(car.getCarId());
     }
+    public List<Car> findAllCarByBrand(String brand) {
+        return carRepository.findCarsByBrandName(brand);
+    }
+
+
 
 }

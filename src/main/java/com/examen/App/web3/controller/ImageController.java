@@ -27,9 +27,9 @@ public class ImageController {
     public Image register(@RequestBody Image image){
         return  imageService.register(image);
     }
-    @DeleteMapping("/delete")
-    public void delete(@RequestBody Image image){
-        imageService.delete(image);
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Integer id){
+        imageService.delete(id);
     }
 
 

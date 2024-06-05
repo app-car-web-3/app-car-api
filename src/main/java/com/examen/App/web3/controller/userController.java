@@ -58,9 +58,9 @@ public class userController {
     public List<User> findAllUser(){
         return  userService.allUser();
     }
-    @DeleteMapping("/delete")
-    public void deleteUser(@RequestBody User user){
-        userService.deleteUser(user);
+    @DeleteMapping("/{id}")
+    public void deleteUser(@PathVariable UUID id ){
+        userService.deleteUser(id);
     }
 
     @GetMapping("/{id}")

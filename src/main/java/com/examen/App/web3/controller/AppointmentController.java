@@ -42,8 +42,8 @@ public class AppointmentController {
         }
     }
 
-    @DeleteMapping("/delete")
-    public void delete(@RequestBody Appointment appointment){
-        appointmentService.delete(appointment);
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Integer id ){
+        appointmentService.delete(id);
     }
 }

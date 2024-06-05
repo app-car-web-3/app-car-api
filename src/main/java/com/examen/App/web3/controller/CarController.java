@@ -29,9 +29,9 @@ public class CarController {
     public  Car register(@RequestBody  Car car){
         return carService.saveCar(car);
     }
-    @DeleteMapping("/delete")
-    public  void deleteCar(@RequestBody Car car){
-        carService.delete(car);
+    @DeleteMapping("/{id}")
+    public  void deleteCar(@PathVariable Integer id ){
+        carService.delete(id);
     }
     @GetMapping("/brand")
     public List<Car> getCarsByBrand(@RequestParam String brand) {

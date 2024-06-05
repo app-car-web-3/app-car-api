@@ -22,7 +22,7 @@ public class ImageService {
     public Image register(Image image){
         return  imageRepository.save(image);
     }
-    public void delete(Image image){
-        imageRepository.deleteById(image.getImageId());
+    public void delete(Integer id ){
+        imageRepository.deleteById(id);
     }
 }

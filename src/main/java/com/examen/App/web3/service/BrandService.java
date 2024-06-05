@@ -22,7 +22,7 @@ public class BrandService {
     public  Brand save(Brand toSave){
         return  brand.save(toSave);
     }
-    public  void delete (Brand toDelete){
-        brand.findById(toDelete.getBrandId());
+    public  void delete (Integer id){
+        brand.findById(id);
     }
 }

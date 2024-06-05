@@ -17,7 +17,7 @@ public class AppointmentService {
     public Appointment register(Appointment appointment){
         return appointmentRepository.save(appointment);
     }
-    public void delete(Appointment appointment){
-        appointmentRepository.deleteById(appointment.getAppointmentId());
+    public void delete(Integer id){
+        appointmentRepository.deleteById(id);
     }
 }

@@ -23,8 +23,8 @@ public class CarService {
     public Car saveCar(Car car){
         return carRepository.save(car);
     }
-    public void delete(Car car){
-        carRepository.deleteById(car.getCarId());
+    public void delete(Integer id){
+        carRepository.deleteById(id);
     }
     public List<Car> findAllCarByBrand(String brand) {
         return carRepository.findCarsByBrandName(brand);

@@ -41,7 +41,6 @@ public class AppointmentController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
     }
-
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Integer id ){
         appointmentService.delete(id);

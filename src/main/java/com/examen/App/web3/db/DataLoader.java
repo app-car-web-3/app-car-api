@@ -7,7 +7,6 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -417,21 +416,18 @@ public class DataLoader implements CommandLineRunner {
 
         // Insérer des utilisateurs
         User user1 = new User();
-        user1.setId(UUID.randomUUID());
         user1.setName("Alice");
         user1.setEmail("alice@example.com");
         user1.setPassword("password123");
         userRepository.save(user1);
 
         User user2 = new User();
-        user2.setId(UUID.randomUUID());
         user2.setName("Bob");
         user2.setEmail("bob@example.com");
         user2.setPassword("password456");
         userRepository.save(user2);
 
         User user3 = new User();
-        user3.setId(UUID.randomUUID());
         user3.setName("Charlie");
         user3.setEmail("charlie@example.com");
         user3.setPassword("password789");

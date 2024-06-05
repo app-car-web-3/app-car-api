@@ -59,12 +59,15 @@ public class userController {
         return  userService.allUser();
     }
     @DeleteMapping("/{id}")
-    public void deleteUser(@PathVariable UUID id ){
+    public void deleteUser(@PathVariable Integer id ){
         userService.deleteUser(id);
     }
-
     @GetMapping("/{id}")
-    public Optional<User> findById(@PathVariable UUID id){
+    public Optional<User> findById(@PathVariable Integer id){
         return userService.findById(id);
+    }
+    @PutMapping("/{id}")
+    public User UpdateUser(@PathVariable Integer id , @RequestBody User user){
+        return  userService.updateUser(id,user);
     }
 }

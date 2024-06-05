@@ -37,10 +37,24 @@ public class UserService {
     public List<User> allUser(){
      return  userRepository.findAll();
     }
-    public  void deleteUser(UUID id){
+    public  void deleteUser(Integer id){
         userRepository.deleteById(id);
     }
-    public Optional<User> findById(UUID id){
+    public Optional<User> findById(Integer id){
         return userRepository.findById(id);
     }
+    public User updateUser(Integer id, User newUserDetails) {
+        Optional<User> optionalUser = userRepository.findById(id);
+
+        if (optionalUser.isPresent()) {
+            User existingUser = optionalUser.get();
+            existingUser.setName(newUserDetails.getName());
+            existingUser.setEmail(newUserDetails.getEmail());
+            existingUser.setEmail(newUserDetails.getEmail());
+            return userRepository.save(existingUser);
+        } else {
+            throw new RuntimeException("User not found with id  : " + id);
+        }
+    }
+
 }

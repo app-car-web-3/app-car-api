@@ -37,3 +37,28 @@ CREATE TABLE users (
     email VARCHAR(255) UNIQUE NOT NULL,
     password VARCHAR(255) NOT NULL
 );
+
+CREATE TABLE brand (
+    brand_id SERIAL PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    description TEXT,
+    image_id INTEGER,
+    CONSTRAINT fk_image FOREIGN KEY(image_id) REFERENCES image(image_id) ON DELETE CASCADE
+);
+
+
+CREATE OR REPLACE FUNCTION DeleteImage(p_image_id INTEGER)
+RETURNS VOID AS $$
+BEGIN
+    UPDATE car
+    SET image_id = NULL
+    WHERE image_id = p_image_id;
+    UPDATE brand
+    SET image_id = NULL
+    WHERE image_id = p_image_id;
+    DELETE FROM image
+    WHERE image_id = p_image_id;
+END;
+$$ LANGUAGE plpgsql;
+
+SELECT DeleteImage();

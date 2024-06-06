@@ -1,4 +1,5 @@
 package com.examen.App.web3.model;
+
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -22,7 +23,7 @@ public class Car {
     @Column(columnDefinition = "TEXT")
     private String description;
     @ManyToOne
-    @JoinColumn(name = "brand_id", referencedColumnName = "brandId")
+    @JoinColumn(name = "brand_id", referencedColumnName = "brandId",nullable = true)
     private Brand brandId;
     private String model;
     @Column(precision = 10, scale = 2)
@@ -34,8 +35,8 @@ public class Car {
     @Enumerated(EnumType.STRING)
     private Status status;
     private String type;
-    @ManyToOne
-    @JoinColumn(name = "image_id", referencedColumnName = "imageId")
-    private Image imageId ;
+    @ManyToOne(cascade = CascadeType.REMOVE)
+    @JoinColumn(name = "image_id", referencedColumnName = "imageId",nullable = true)
+    private Image imageId;
     public enum Status {Pinned, NotPinned}
 }

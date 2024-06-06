@@ -1,7 +1,12 @@
 package com.examen.App.web3.service;
 
+import com.examen.App.web3.model.Brand;
+import com.examen.App.web3.model.Car;
 import com.examen.App.web3.model.Image;
+import com.examen.App.web3.repository.BrandRepository;
+import com.examen.App.web3.repository.CarRepository;
 import com.examen.App.web3.repository.ImageRepository;
+import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -9,6 +14,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
+@Transactional
 public class ImageService {
     @Autowired
     private ImageRepository imageRepository;
@@ -23,6 +29,6 @@ public class ImageService {
         return  imageRepository.save(image);
     }
     public void delete(Integer id ){
-        imageRepository.deleteById(id);
+        imageRepository.deleteImageById(id);
     }
 }

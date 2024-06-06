@@ -1,6 +1,7 @@
 package com.examen.App.web3.controller;
 
 import com.examen.App.web3.model.Image;
+import com.examen.App.web3.model.User;
 import com.examen.App.web3.service.ImageService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -30,6 +31,11 @@ public class ImageController {
     @DeleteMapping("/{id}")
     public void delete(@PathVariable Integer id){
         imageService.delete(id);
+    }
+
+    @PutMapping("/{id}")
+    public Image UpdateImage(@PathVariable Integer id , @RequestBody Image image){
+        return  imageService.updateImage(id,image);
     }
 
 

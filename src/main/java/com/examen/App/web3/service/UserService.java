@@ -50,7 +50,6 @@ public class UserService {
             User existingUser = optionalUser.get();
             existingUser.setName(newUserDetails.getName());
             existingUser.setEmail(newUserDetails.getEmail());
-            existingUser.setEmail(newUserDetails.getEmail());
             return userRepository.save(existingUser);
         } else {
             throw new RuntimeException("User not found with id  : " + id);

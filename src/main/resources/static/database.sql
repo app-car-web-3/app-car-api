@@ -45,20 +45,3 @@ CREATE TABLE brand (
     image_id INTEGER,
     CONSTRAINT fk_image FOREIGN KEY(image_id) REFERENCES image(image_id) ON DELETE CASCADE
 );
-
-
-CREATE OR REPLACE FUNCTION DeleteImage(p_image_id INTEGER)
-RETURNS VOID AS $$
-BEGIN
-    UPDATE car
-    SET image_id = NULL
-    WHERE image_id = p_image_id;
-    UPDATE brand
-    SET image_id = NULL
-    WHERE image_id = p_image_id;
-    DELETE FROM image
-    WHERE image_id = p_image_id;
-END;
-$$ LANGUAGE plpgsql;
-
-SELECT DeleteImage();

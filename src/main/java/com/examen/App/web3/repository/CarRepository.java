@@ -12,6 +12,9 @@ import java.util.List;
 @Repository
 
 public interface CarRepository extends JpaRepository<Car,Integer> {
+    @Query(value = "SELECT DeleteCar(:carId);", nativeQuery = true)
+    void deleteCarById(@Param("carId") Integer imageId);
+
     @Query("SELECT c FROM Car c INNER JOIN c.brandId b WHERE b.name = :brandName")
     List<Car> findCarsByBrandName(@Param("brandName") String brandName);
 

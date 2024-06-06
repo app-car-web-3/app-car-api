@@ -1,6 +1,7 @@
 package com.examen.App.web3.controller;
 
 import com.examen.App.web3.model.Car;
+import com.examen.App.web3.model.Image;
 import com.examen.App.web3.service.CarService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -41,6 +42,8 @@ public class CarController {
     public List<Car> findCarsByBrandModelContaining(@RequestParam String brand) {
         return carService.findCarsByBrandModelContaining(brand);
     }
-
-
+    @PutMapping("/{id}")
+    public Car UpdateCar(@PathVariable Integer id , @RequestBody Car car){
+        return  carService.updateCar(id,car);
+    }
 }

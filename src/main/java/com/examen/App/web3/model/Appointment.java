@@ -39,7 +39,7 @@ public class Appointment {
     private Status status;
 
     public enum Status {
-        pending, validated, rejected, archived
+        pending, validated, rejected,archived
     }
 
 }

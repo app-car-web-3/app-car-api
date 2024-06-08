@@ -3,6 +3,7 @@ package com.examen.App.web3.service;
 import com.examen.App.web3.model.User;
 import com.examen.App.web3.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
@@ -18,6 +19,13 @@ public class UserService {
 
     @Autowired
     private PasswordEncoder passwordEncoder;
+    @Autowired
+    private BCryptPasswordEncoder passwordEncoders;
+
+    public void save(User user) {
+        user.setPassword(passwordEncoder.encode(user.getPassword()));
+        userRepository.save(user);
+    }
 
     public User login(String email, String password) {
         User user = userRepository.findByEmail(email);
@@ -33,6 +41,9 @@ public class UserService {
         }
         newUser.setPassword(passwordEncoder.encode(newUser.getPassword()));
         return userRepository.save(newUser);
+    }
+    public User findByEmail(String email) {
+        return userRepository.findByEmail(email);
     }
     public List<User> allUser(){
      return  userRepository.findAll();

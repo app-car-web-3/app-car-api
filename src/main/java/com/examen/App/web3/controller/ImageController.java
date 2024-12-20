@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/image")
-@CrossOrigin(origins = {"http://localhost:3000", "https://prod--dabanao.netlify.app"})
+@CrossOrigin(origins = {"http://localhost:3000", "https://dabanao.netlify.app"})
 
 public class ImageController {
     @Autowired
